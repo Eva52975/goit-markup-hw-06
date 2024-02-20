@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo" href="./index.html"
@@ -51,8 +51,13 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-mob-menu-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-mob-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Секція перша -->
@@ -131,7 +136,11 @@
           <ul class="list-team">
             <li class="team-item">
               <img
-                src="./images/img.jpg"
+                srcset="
+                  ./images/team/mark-mob.jpg    1x,
+                  ./images/team/mark-mob@2x.jpg 2x
+                "
+                src="./images/team/mark-mob.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -173,7 +182,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/imgtom.jpg.jpg"
+                srcset="
+                  ./images/team/tom-mob.jpg    1x,
+                  ./images/team/tom-mob@2x.jpg 2x
+                "
+                src="./images/team/tom-mob.jpg"
                 class="te"
                 alt="Tom Ford"
                 width="264"
@@ -216,7 +229,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/imgcamila.jpg.jpg"
+                srcset="
+                  ./images/team/camila-mob.jpg    1x,
+                  ./images/team/camila-mob@2x.jpg 2x
+                "
+                src="./images/team/camila-mob.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -258,7 +275,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/imgdaniel.jpg.jpg"
+                srcset="
+                  ./images/team/daniel-mob.jpg    1x,
+                  ./images/team/daniel-mob@2x.jpg 2x
+                "
+                src="./images/team/daniel-mob.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -651,7 +672,7 @@
 
     <!-- ==================FORM======================= -->
 
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -733,6 +754,6 @@
           <button class="button-send-form" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
