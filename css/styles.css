@@ -160,7 +160,7 @@ ul {
 /* ==================HERO======================== */
 
 .hero {
-  min-width: 320px;
+  max-width: 320px;
   background-position: center;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -191,7 +191,6 @@ ul {
   color: #fff;
   text-align: center;
   font-weight: 700;
-  /* line-height: 1.07; */
   letter-spacing: 0.02em;
   /* max-width: 496px; */
   max-width: 216px;
@@ -466,7 +465,10 @@ ul {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  text-align: center;
 }
 
 .footer {
@@ -476,7 +478,7 @@ ul {
 }
 
 .container-logo {
-  margin-right: 120px;
+  max-width: 288px;
 }
 
 .footer-logo {
@@ -501,12 +503,11 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  text-align: left;
 }
 
 .container-soc {
   max-width: 208px;
-  margin-right: 80px;
 }
 
 .footer-soc-text {
@@ -550,12 +551,14 @@ ul {
 }
 
 .container-form {
-  max-width: 453px;
+  max-width: 288px;
 }
 
 .container-form-wrap {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 }
 
 .title-form-footer {
@@ -568,7 +571,7 @@ ul {
 }
 
 .form-email {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #ffffff;
@@ -948,6 +951,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding-bottom: 112px;
     padding-top: 112px;
     background-image: linear-gradient(
@@ -1041,3 +1045,56 @@ ul {
 }
 
 /* =========================================== */
+
+/* =================FOOTER======================== */
+
+/* ===========TABLET=================== */
+
+@media screen and (min-width: 768px) {
+  .footer > .container {
+    width: 584px;
+  }
+
+  .footer-container {
+    column-gap: 24px;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .container-logo {
+    max-width: 264px;
+  }
+
+  .container-form {
+    max-width: 453px;
+  }
+
+  .container-form-wrap {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+
+  .form-email {
+    width: 264px;
+  }
+}
+
+/* =================LAPTOP=================== */
+
+@media screen and (min-width: 1158px) {
+  .footer > .container {
+    width: 1158px;
+  }
+
+  .footer-container {
+    gap: 0px;
+  }
+
+  .container-logo {
+    margin-right: 120px;
+  }
+
+  .container-soc {
+    margin-right: 80px;
+  }
+}
