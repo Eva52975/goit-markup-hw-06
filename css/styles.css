@@ -152,6 +152,14 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.mob-menu-nav-link-current {
+  color: #404bbf;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
 .mob-menu-address {
   margin-bottom: 48px;
 }
@@ -277,14 +285,12 @@ ul {
 
 .advantages-list {
   display: flex;
-  /* gap: 24px; */
   row-gap: 72px;
 
   flex-wrap: wrap;
 }
 
 .advantages-item {
-  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .advantages-icon {
@@ -305,11 +311,8 @@ ul {
 
 .advantages-subtitle {
   color: #2e2f42;
-  /* font-size: 20px; */
   font-size: 36px;
-  /* font-weight: 500; */
   font-weight: 700;
-  /* line-height: 1.2; */
   line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -320,7 +323,6 @@ ul {
 .advantages-text {
   color: #434455;
   font-size: 16px;
-  /* font-weight: 400; */
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -348,7 +350,6 @@ ul {
   display: flex;
   row-gap: 72px;
   flex-wrap: wrap;
-  /* gap: 24px; */
   justify-content: center;
 }
 
@@ -357,7 +358,6 @@ ul {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  /* flex-basis: calc((100% - 72px) / 3); */
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -684,8 +684,8 @@ ul {
 
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -694,7 +694,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-close-btn {
@@ -808,9 +808,6 @@ ul {
   letter-spacing: 0.04em;
 }
 
-.modal-textarea::placeholder {
-}
-
 .modal-textarea:focus {
   border-color: #4d5ae5;
 }
@@ -825,9 +822,12 @@ ul {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
 }
 
-.checkbox-text span {
+.checkbox-text > .span-check {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -841,7 +841,7 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-check:checked + .checkbox-text span {
+.form-check:checked + .checkbox-text > .span-check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -849,6 +849,8 @@ ul {
 
 .span-check {
   display: inline-flex;
+
+  flex-shrink: 0;
 }
 
 .link-form {
@@ -1232,3 +1234,19 @@ ul {
     letter-spacing: 0.02em;
   }
 }
+
+/* ===================================== */
+
+/* ==================FORM================== */
+
+/* ========TABLET=============== */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+/* =========================== */
