@@ -952,10 +952,6 @@ ul {
 /* =============ТABLET==================== */
 
 @media screen and (min-width: 768px) {
-  .team > .container {
-    width: 584px;
-  }
-
   .list-team {
     row-gap: 64px;
     column-gap: 24px;
@@ -965,10 +961,6 @@ ul {
 /* ===================LAPTOP======================= */
 
 @media screen and (min-width: 1158px) {
-  .team > .container {
-    width: 1158px;
-  }
-
   .list-team {
     gap: 24px;
     flex-wrap: nowrap;
@@ -1021,7 +1013,7 @@ ul {
 
 @media screen and (min-width: 1158px) {
   .hero {
-    max-width: 1140px;
+    max-width: 1440px;
     padding-bottom: 188px;
     padding-top: 188px;
     background-image: linear-gradient(
